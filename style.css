@@ -127,12 +127,9 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
 .brand-divider{ width: 1px; height: 52px; background: var(--line-2); flex-shrink: 0; }
 .brand-text{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1.2rem;
+  flex-direction: column;
   line-height: 1.25;
   max-width: none;
-  white-space: nowrap;
 }
 .brand-text strong{ font-family: var(--display); font-size: .98rem; }
 .brand-text em{
