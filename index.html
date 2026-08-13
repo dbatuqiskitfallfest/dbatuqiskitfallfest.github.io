@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qiskit Fall Fest 2026 · DBATU Lonere</title>
+<meta name="description" content="Qiskit Fall Fest 2026 at Dr. Babasaheb Ambedkar Technological University, Lonere — workshops and a quantum computing hackathon, Oct 26 – 28, 2026.">
+
+<!-- Favicon (reuses the fest mark) -->
+<link rel="icon" href="fall-fest-hero.webp">
+
+<!-- Fonts: Space Grotesk (display) + IBM Plex Sans (body) + IBM Plex Mono (labels/data) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="grain"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-badge" role="img" aria-label="Qiskit Fall Fest 2026 badge"></span>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <img src="dbatu-logo.jpeg" alt="DBATU crest" class="brand-crest">
+      <span class="brand-text">
+        <strong>Qiskit Fall Fest &rsquo;26</strong>
+        <em>Hosted by Dr. Babasaheb Ambedkar Technological University, Lonere</em>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#register" class="btn btn-pink nav-cta">Register</a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <p class="eyebrow">Qiskit Fall Fest 2026 &middot; Hosted by DBATU, Lonere</p>
+
+    <h1 class="hero-title">
+      One qubit.<br>
+      <span class="grad-text">Two states at once.</span><br>
+      Three days to explore both.
+    </h1>
+
+    <p class="hero-sub">
+      Dr. Babasaheb Ambedkar Technological University is running one of this year&rsquo;s
+      Qiskit Fall Fest events &mdash; a global, student-led celebration of quantum computing
+      supported by IBM Quantum. Expect hands-on workshops, a Qiskit hackathon, and a
+      campus full of people building on real quantum hardware and simulators.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#register" class="btn btn-pink">Register your team</a>
+      <a href="#schedule" class="btn btn-ghost">See the schedule</a>
+    </div>
+
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="meta-label">Dates</span>
+        <span class="meta-value">26 &ndash; 28 Oct, 2026</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <span class="meta-label">Venue</span>
+        <span class="meta-value">DBATU, Lonere &middot; Raigad, MH</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item countdown" id="countdown">
+        <span class="meta-label">Starts in</span>
+        <span class="meta-value" id="countdownValue">&mdash;</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <svg class="bloch" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sphereStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#FF5DA2"/>
+          <stop offset="100%" stop-color="#2EE6D6"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#8C7BFF" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#8C7BFF" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <circle cx="210" cy="210" r="180" fill="url(#glow)"/>
+
+      <g class="bloch-frame">
+        <circle cx="210" cy="210" r="150" fill="none" stroke="url(#sphereStroke)" stroke-width="1.4" opacity="0.55"/>
+        <ellipse cx="210" cy="210" rx="150" ry="46" fill="none" stroke="url(#sphereStroke)" stroke-width="1.4" opacity="0.85"/>
+        <ellipse class="ring-spin-slow" cx="210" cy="210" rx="150" ry="90" fill="none" stroke="#D4FF4F" stroke-width="1.2" opacity="0.5"/>
+        <line x1="210" y1="60" x2="210" y2="360" stroke="url(#sphereStroke)" stroke-width="1.2" opacity="0.4"/>
+      </g>
+
+      <line class="state-vector" x1="210" y1="210" x2="210" y2="70" stroke="#FF5DA2" stroke-width="2.2"/>
+      <circle class="state-dot" cx="210" cy="70" r="7" fill="#FF5DA2"/>
+
+      <text x="210" y="45" text-anchor="middle" class="ket-label">|1&#10217;</text>
+      <text x="210" y="392" text-anchor="middle" class="ket-label">|0&#10217;</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="section-inner two-col">
+    <div class="col">
+      <p class="eyebrow eyebrow-dark">The global fest</p>
+      <h2>Qiskit Fall Fest</h2>
+    </div>
+    <div class="col col-host">
+      <img src="dbatu-campus.jpg" alt="DBATU Lonere campus building" class="col-host-image">
+      <div class="col-host-content">
+        <p class="eyebrow eyebrow-dark">The host</p>
+        <h2>DBATU, Lonere</h2>
+        <p>
+          Dr. Babasaheb Ambedkar Technological University (DBATU), Lonere, is proud to host Qiskit Fall Fest 2026 in Konkan for the first time.
+          This edition brings together students, faculty members, and research scholars to explore the exciting world of quantum computing through a
+          hands-on workshop followed by a hackathon,
+          inspired by the Fall Fest format followed by universities around the world.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRACKS ================= -->
+<section class="section section-dark" id="tracks">
+  <div class="section-inner">
+    <p class="eyebrow">How the fest unfolds</p>
+    <h2 class="section-title">Three days, building on each other</h2>
+
+    <div class="tracks-grid">
+      <article class="track-card">
+        <span class="track-tag">Day 1</span>
+        <h3> Qiskit Basics</h3>
+        <p>
+          Start from first principles &mdash; quantum computing fundamentals and
+          algorithm complexity &mdash; then get hands-on with two Qiskit lab
+          sessions. No quantum background needed, just curiosity and a laptop.
+        </p>
+        <ul class="track-list">
+          <li>Introduction to Quantum Computing</li>
+          <li>Introduction to Qiskit</li>
+          <li>Algorithm Analysis &amp; Complexity</li>
+          <li>Two hands-on Qiskit Lab sessions</li>
+        </ul>
+      </article>
+
+      <article class="track-card">
+        <span class="track-tag">Day 2</span>
+        <h3>Quantum Algorithms with Qiskit</h3>
+        <p>
+          Go deeper into the algorithms that make quantum computing useful &mdash;
+          optimization and error correction &mdash; with two more lab sessions to
+          put the theory into practice.
+        </p>
+        <ul class="track-list">
+          <li>Quantum Algorithms</li>
+          <li>Quantum Optimization Algorithms</li>
+          <li>Error Correction with Qiskit</li>
+          <li>Qiskit Lab 2 &amp; Lab 3</li>
+        </ul>
+      </article>
+
+      <article class="track-card track-card-highlight">
+        <span class="track-tag">Day 3</span>
+        <h3>Applying Qiskit to Industrial Problems</h3>
+        <p>
+          Apply everything to real optimization problems, then build and defend
+          your solution in front of a judging panel before the closing farewell.
+        </p>
+        <ul class="track-list">
+          <li>Portfolio Optimization with Qiskit</li>
+          <li>Route Optimization with Qiskit</li>
+          <li>Hackathon problem statement &amp; build time</li>
+          <li>Presentations &amp; farewell</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCHEDULE ================= -->
+<section class="section" id="schedule">
+  <div class="section-inner">
+    <p class="eyebrow eyebrow-dark">Three days, laid out like a circuit</p>
+    <h2 class="section-title-dark">Schedule</h2>
+
+    <div class="circuit">
+      <div class="circuit-line"></div>
+
+      <div class="circuit-day">
+        <div class="circuit-gate">Day 1</div>
+        <div class="circuit-date">26 Oct</div>
+        <ul class="circuit-events">
+          <li><span>10:00</span>Registration</li>
+          <li><span>10:30</span>Introduction to Quantum Computing</li>
+          <li><span>11:30</span>Tea break</li>
+          <li><span>11:45</span>Introduction to Qiskit</li>
+          <li><span>12:45</span>Algorithm Analysis and Complexity</li>
+          <li><span>13:45</span>Lunch break</li>
+          <li><span>14:45</span>Qiskit Lab</li>
+          <li><span>15:45</span>Tea break</li>
+          <li><span>16:00</span>Qiskit Lab Session</li>
+        </ul>
+      </div>
+
+      <div class="circuit-day">
+        <div class="circuit-gate">Day 2</div>
+        <div class="circuit-date">27 Oct</div>
+        <ul class="circuit-events">
+          <li><span>10:30</span>Quantum Algorithms</li>
+          <li><span>11:30</span>Tea break</li>
+          <li><span>11:45</span>Quantum Optimization Algorithms</li>
+          <li><span>12:45</span>Error Correction with Qiskit</li>
+          <li><span>13:45</span>Lunch break</li>
+          <li><span>14:45</span>Qiskit Lab 2</li>
+          <li><span>15:45</span>Tea break</li>
+          <li><span>16:00</span>Qiskit Lab 3</li>
+        </ul>
+      </div>
+
+      <div class="circuit-day">
+        <div class="circuit-gate">Day 3</div>
+        <div class="circuit-date">28 Oct</div>
+        <ul class="circuit-events">
+          <li><span>10:30</span>Portfolio Optimization with Qiskit</li>
+          <li><span>11:30</span>Tea break</li>
+          <li><span>11:45</span>Route Optimization with Qiskit</li>
+          <li><span>12:45</span>Hackathon problem statement</li>
+          <li><span>13:45</span>Lunch break</li>
+          <li><span>14:45</span>Hackathon statement</li>
+          <li><span>15:45</span>Tea break</li>
+          <li><span>16:00</span>Hackathon &amp; farewell</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REGISTER ================= -->
+<section class="section register" id="register">
+  <div class="section-inner register-card">
+    <img src="fall-fest-hero.webp" alt="" class="fest-mark" aria-hidden="true">
+
+    <p class="eyebrow eyebrow-dark">Seats are limited</p>
+    <h2>Ready to collapse the wavefunction?</h2>
+    <p class="register-copy">
+      Registration is free and open to all DBATU students. Fill out the form below
+      to lock in your spot &mdash; individually for workshops, or as a team of
+      2&ndash;4 for the hackathon.
+    </p>
+
+    <div class="register-action">
+      <div class="register-cta">
+        <a href="https://forms.gle/nki73qEPTaR8pUsf8" target="_blank" rel="noopener" class="btn btn-pink btn-lg">Open registration form</a>
+        <p class="register-fineprint">Or scan the QR code to open it on your phone.</p>
+      </div>
+      <div class="register-qr">
+        <img src="register-qr.png" alt="QR code linking to the DBATU Qiskit Fall Fest registration form" width="150" height="150">
+        <p class="register-qr-caption">Scan to register</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq">
+  <div class="section-inner">
+    <p class="eyebrow eyebrow-dark">Good to know</p>
+    <h2 class="section-title-dark">FAQ</h2>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Do I need a quantum computing background?</summary>
+        <p>No. Day 1 workshops start from first principles &mdash; qubits, gates, and
+        measurement &mdash; before anyone touches the hackathon problem statements.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What team size is allowed for the hackathon?</summary>
+        <p>Teams of 2&ndash;4 for the General Track. The Freshers Track is individual.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need my own quantum hardware?</summary>
+        <p>No. Everything runs through Qiskit on simulators, with access to real IBM
+        Quantum backends provided during the event.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is there a registration fee?</summary>
+        <p>No, participation is free for all DBATU students.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Will I get a certificate?</summary>
+        <p>Yes &mdash; every participant who submits a project receives a certificate,
+        with additional recognition for winners.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section section-dark contact-section" id="contact">
+  <div class="section-inner contact-inner">
+    <p class="eyebrow">Get in touch</p>
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-layout">
+      <div class="contact-people">
+        <div class="contact-card">
+          <span class="contact-role">Faculty Coordinator</span>
+          <h3>Dr. A. W. Kiwelekar</h3>
+          <a href="mailto:awk@dbatu.ac.in" class="contact-mail">awk@dbatu.ac.in</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-role">Faculty Coordinator</span>
+          <h3>Dr. H. R. Gaikwad</h3>
+          <a href="mailto:harsha.gaikwad@dbatu.ac.in" class="contact-mail">harsha.gaikwad@dbatu.ac.in</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-role">Faculty Coordinator</span>
+          <h3>Dr. L. D. Netak</h3>
+          <a href="mailto:ldnetak@dbatu.ac.in" class="contact-mail">ldnetak@dbatu.ac.in</a>
+        </div>
+        <div class="contact-card contact-address">
+          <span class="contact-role">Venue</span>
+          <h3>DBATU, Lonere</h3>
+          <p>Vidyavihar, Lonere, Taluka Mangaon,<br>District Raigad, Maharashtra, 402103, India</p>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps?q=18.1698201,73.338533&z=15&output=embed"
+          width="100%" height="100%" style="border:0;"
+          allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="DBATU Lonere location on Google Maps">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <div>
+        <strong>Dr. Babasaheb Ambedkar Technological University</strong>
+        <span>Vidyavihar, Lonere, Taluka Mangaon, District Raigad, Maharashtra, 402103, India</span>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-meta">
+      <span>Organized in association with IBM Qiskit Fall Fest 2026</span>
+      <span>&copy; <span id="year"></span> Qiskit Fall Fest &middot; DBATU Lonere</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
