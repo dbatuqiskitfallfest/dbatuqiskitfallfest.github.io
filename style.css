@@ -135,7 +135,7 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
 .brand-text em{
   font-style: normal;
   font-family: var(--mono);
-  font-size: .78rem;
+  font-size: .68rem;
   color: #D4FF4F;
   white-space: nowrap;
 }
