@@ -125,13 +125,22 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
   mix-blend-mode: multiply;
 }
 .brand-divider{ width: 1px; height: 52px; background: var(--line-2); flex-shrink: 0; }
-.brand-text{ display: flex; flex-direction: column; line-height: 1.25; max-width: 320px; }
+.brand-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+  line-height: 1.25;
+  max-width: none;
+  white-space: nowrap;
+}
 .brand-text strong{ font-family: var(--display); font-size: .98rem; }
-.brand-text em {
+.brand-text em{
   font-style: normal;
   font-family: var(--mono);
   font-size: .78rem;
   color: #D4FF4F;
+  white-space: nowrap;
 }
 .nav-links{ display: flex; gap: 1.75rem; font-size: .9rem; }
 .nav-links a{ color: #D4FF4F; transition: color .2s ease; }
