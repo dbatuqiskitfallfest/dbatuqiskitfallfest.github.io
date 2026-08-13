@@ -111,16 +111,18 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
 .brand{ display: flex; align-items: center; gap: .75rem; margin-right: auto; }
 .brand-badge{
   width: 88px; height: 88px; border-radius: 14px; flex-shrink: 0;
-  background-color: #fff;
+  background-color: transparent;
   background-image: url('fall-fest-hero.webp');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   padding: 6px;
+  mix-blend-mode: multiply;
 }
 .brand-crest{
   width: 88px; height: 88px; border-radius: 12px; object-fit: contain;
-  background: #fff; padding: 6px; flex-shrink: 0;
+  background: transparent; padding: 6px; flex-shrink: 0;
+  mix-blend-mode: multiply;
 }
 .brand-divider{ width: 1px; height: 52px; background: var(--line-2); flex-shrink: 0; }
 .brand-text{ display: flex; flex-direction: column; line-height: 1.25; max-width: 320px; }
