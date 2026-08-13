@@ -127,10 +127,14 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
 .brand-divider{ width: 1px; height: 52px; background: var(--line-2); flex-shrink: 0; }
 .brand-text{ display: flex; flex-direction: column; line-height: 1.25; max-width: 320px; }
 .brand-text strong{ font-family: var(--display); font-size: .98rem; }
-.brand-text em{ font-style: normal; font-family: var(--mono); font-size: .68rem; color: var(--muted); }
-
+.brand-text em {
+  font-style: normal;
+  font-family: var(--mono);
+  font-size: .68rem;
+  color: #D4FF4F;
+}
 .nav-links{ display: flex; gap: 1.75rem; font-size: .9rem; }
-.nav-links a{ color: var(--muted); transition: color .2s ease; }
+.nav-links a{ color: #D4FF4F; transition: color .2s ease; }
 .nav-links a:hover{ color: var(--text); }
 .nav-cta{ font-size: .8rem; padding: .6rem 1.2rem; }
 
