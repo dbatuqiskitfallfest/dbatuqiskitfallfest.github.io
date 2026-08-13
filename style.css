@@ -130,7 +130,7 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
 .brand-text em {
   font-style: normal;
   font-family: var(--mono);
-  font-size: .68rem;
+  font-size: .78rem;
   color: #D4FF4F;
 }
 .nav-links{ display: flex; gap: 1.75rem; font-size: .9rem; }
