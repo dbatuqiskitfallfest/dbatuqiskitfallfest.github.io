@@ -137,6 +137,7 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; font-size: 1rem; line-
 }
 .brand-badge,
 .brand-crest{
+  display: inline-block;
   width: 108px;
   height: 108px;
   border-radius: 16px;
@@ -144,7 +145,7 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; font-size: 1rem; line-
   background-color: transparent;
   padding: 6px;
   mix-blend-mode: normal;
-  filter: brightness(1.12) contrast(1.04) saturate(1.05);
+  filter: brightness(1.3) contrast(1.1) saturate(1.15);
 }
 .brand-badge{
   background-image: url('Qiskit_03.png');
