@@ -18,7 +18,7 @@ if (burger && navLinks) {
 
 // ===== Countdown to event start =====
 // Edit EVENT_START if your dates/timezone change.
-const EVENT_START = new Date('2026-10-26T10:00:00+05:30').getTime();
+const EVENT_START = new Date('2026-10-26T10:30:00+05:30').getTime();
 const countdownEl = document.getElementById('countdownValue');
 
 function updateCountdown() {
