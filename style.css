@@ -310,6 +310,12 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; font-size: 1rem; line-
 
 .two-col{ display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
 .col h2{ font-size: 1.6rem; }
+.about-badge{
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 16px;
+}
 
 .col-host{
   display: flex;
