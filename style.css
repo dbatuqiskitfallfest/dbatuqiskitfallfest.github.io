@@ -222,7 +222,7 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; font-size: 1rem; line-
   border-color: transparent;
   transform: translateY(-1px);
 }
-.nav-cta{ font-size: .85rem; padding: .6rem 1.2rem; flex-shrink: 0; }
+.nav-cta{ font-size: .85rem; padding: .6rem 1.2rem; flex-shrink: 0; margin-left: auto; }
 
 .burger{
   display: none;
@@ -350,7 +350,7 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; font-size: 1rem; line-
 .col-host-content p:last-child{ margin-bottom: 0; }
 
 /* =========================================================
-   Maharashtra Technology Quantum Mission panel
+   Maharashtra Quantum Technology Mission panel
    ========================================================= */
 .mission-panel{ margin-top: 2.5rem; }
 .mission-card{
