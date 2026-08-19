@@ -332,21 +332,58 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; font-size: 1rem; line-
 
 .col-host{
   display: flex;
-  align-items: stretch;
+  flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid var(--line-2);
   background: var(--panel);
 }
 .col-host-image{
-  width: 42%;
-  min-width: 160px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: center 35%;
   flex-shrink: 0;
 }
-.col-host-content{ padding: 2rem; display: flex; flex-direction: column; justify-content: center; }
+.col-host-content{ padding: 1.75rem 2rem 2rem; display: flex; flex-direction: column; justify-content: center; }
 .col-host-content h2{ color: var(--text); }
 .col-host-content p:last-child{ margin-bottom: 0; }
+
+/* =========================================================
+   Maharashtra Technology Quantum Mission panel
+   ========================================================= */
+.mission-panel{ margin-top: 2.5rem; }
+.mission-card{
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  border-radius: 20px;
+  padding: 2.5rem;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, rgba(140,123,255,.12), rgba(255,93,162,.08));
+  box-shadow: inset 0 0 0 1px rgba(140,123,255,.30);
+}
+.mission-text h2{ font-size: 1.5rem; color: var(--text); }
+.mission-text p:last-child{ margin-bottom: 0; }
+.mission-points{ display: flex; flex-direction: column; gap: 1rem; }
+.mission-points li{
+  font-size: .92rem;
+  color: var(--muted);
+  line-height: 1.55;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--violet);
+}
+.mission-points li span{
+  display: block;
+  font-family: var(--mono);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: .2rem;
+}
 
 /* =========================================================
    Tracks
@@ -417,6 +454,12 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; font-size: 1rem; line-
 .register-qr{ display: flex; flex-direction: column; align-items: center; gap: .5rem; }
 .register-qr img{ background: #fff; padding: .5rem; border-radius: .65rem; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
 .register-qr-caption{ font-family: var(--mono); font-size: .8rem; opacity: .65; }
+
+/* =========================================================
+   Attendee Guide
+   ========================================================= */
+.attendee-inner{ text-align: left; max-width: 720px; }
+.attendee-copy{ font-size: 1.02rem; max-width: 56ch; }
 
 /* =========================================================
    FAQ
@@ -490,8 +533,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   .hero-visual{ order: -1; opacity: .8; }
   .bloch{ max-width: 260px; }
   .two-col{ grid-template-columns: 1fr; }
-  .col-host{ flex-direction: column; }
-  .col-host-image{ width: 100%; height: 200px; }
+  .col-host-image{ aspect-ratio: 16 / 10; }
+  .mission-card{ grid-template-columns: 1fr; padding: 1.75rem; }
   .tracks-grid{ grid-template-columns: 1fr; }
   .circuit{ grid-template-columns: 1fr; }
   .circuit-line{ display: none; }
